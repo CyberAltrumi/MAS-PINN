@@ -1,0 +1,7 @@
+__pycache__/
+# experiment outputs
+results*/
+figures*/
+*.npz
+*.pt
+*.log
