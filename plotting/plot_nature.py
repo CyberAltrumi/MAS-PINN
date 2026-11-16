@@ -229,8 +229,6 @@ def fig_trajectories(runs, args):
                        label=METHODS[m][0]) for m in args.traj_methods]
     fig.legend(handles=handles, loc='upper center', bbox_to_anchor=(0.53, 0.995),
                ncol=len(handles), handlelength=2.3, columnspacing=1.4)
-    fig.text(0.99, 0.985, f'Seed {seed}  |  Noise {100*noise:g}%', ha='right', va='top',
-             fontsize=6.5, color='#666666')
     base = args.out / 'lv_trajectories'
     save_geometry(fig, axes, base.with_suffix('.alignment.json'))
     fig.savefig(base.with_suffix('.pdf'))
